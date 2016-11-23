@@ -1,0 +1,98 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[11pt, a4paper]{awesome-cv}
+
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     3rd party packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Needed to divide into several files
+%\usepackage{import}
+%\usepackage{booktabs}
+%\usepackage{multirow}
+%\usepackage{graphicx,draftwatermark}
+\SetWatermarkText{\centering \,\includegraphics[scale=0.4]{ai-002.jpg}}
+\SetWatermarkAngle{0}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Essentials
+\name{Arpit}{Aggarwal}
+\address{113E/27, 16th Main, Vijayanagar, Bengaluru - 560040, India}
+\mobile{(+91) 99-7395-5137} 
+%%% Social
+\email{ar13pit@gmail.com}
+\homepage{ar13pit.com}
+%\linkedin{ar13pit}
+%\github{ar13pit}
+%%% Optionals
+%\position{Artificial Intelligence Research}
+\position{Cognitive Science{\enskip\cdotp\enskip}Signal Processing{\enskip\cdotp\enskip}IoT} 
+%\quote{\vspace{-1.5em}``We are what we repeatedly do. Excellence, then, is not an act, but a habit.''}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Make a footer for CV with three arguments(<left>, <center>, <right>)
+\makecvfooter
+  {\today}
+  {Arpit Aggarwal~~~·~~~CV}%Résumé}
+  {\thepage}
+
+\begin{document}
+%%% Make a header for CV with personal data
+\makecvheader
+
+%%% Import contents
+\import{\sectiondir}{education.tex}
+\import{\sectiondir}{research-experience.tex}
+\import{\sectiondir}{key-projects.tex}
+\import{\sectiondir}{publications.tex}
+\import{\sectiondir}{academic-affiliations.tex}
+\import{\sectiondir}{skills.tex}
+\import{\sectiondir}{extracurricular.tex}
+%\import{\sectiondir}{writing.tex}
+\end{document}

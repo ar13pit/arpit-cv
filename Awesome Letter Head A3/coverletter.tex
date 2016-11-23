@@ -1,0 +1,104 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[11pt, a4paper]{awesome-cv}
+
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{cv/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Essentials
+\name{Shobhana}{Aggarwal}
+\address{113E/27, 16th Main, Vijayanagar, Bengaluru - 560040, India}
+\mobile{(+91) 98-8090-1013} 
+%%% Social
+\email{shobh\_29@rediffmail.com}
+%\homepage{www.posquit0.com}
+%\github{posquit0}
+%\linkedin{ar13pit}
+%%% Optionals
+%\position{NLP{\enskip\cdotp\enskip}Machine Learning{\enskip\cdotp\enskip}IoT{\enskip\cdotp\enskip}Embedded Systems} 
+%\quote{``I have not failed. I’ve just found 10,000 ways that won’t work." \\ \hfill - Thomas A. Edison}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Letter Data (Cover Letter)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\recipient
+  {Office of Graduate Admission}
+  {University of Southern California\\Los Angles, CA, United States}
+\letterdate{\today}
+\lettertitle{\vspace{-2em} Re: Letter of Sponsorship}
+\letteropening{Dear Sir/Madam,}
+\letterclosing{Sincerely,\\~\\~\\}
+%\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Make a footer for CV with three arguments(<left>, <center>, <right>)
+\makecvfooter
+  {\today}
+  {Shobhana Aggarwal~~~·~~~Letter of Sponsorship}
+  {}
+
+\begin{document}
+%%% Make a header for CV using personal data
+\makecvheader
+
+%%% Make a title for Cover Letter using letter data
+\makelettertitle
+
+%%% Write content for your cover letter
+\begin{cvletter}
+This is to acknowledge that as his mother, I will be sponsoring Arpit Aggarwal with full cost of tuition, fees and living expenses for full length of the applied program.
+
+Please find attached the bank certificates showing sufficient funds in my accounts to provide for one year of graduate school.
+
+\end{cvletter}
+
+%%% Make a closing for Cover Letter using letter data
+\makeletterclosing
+
+
+\end{document}
