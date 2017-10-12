@@ -1,0 +1,108 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[11pt, a4paper]{awesome-cv}
+
+%%% Override a directory location for fonts(default: 'fonts/')
+%\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{cv/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+\SetWatermarkText{\centering \,\includegraphics[scale=0.4]{ai-002.jpg}}
+\SetWatermarkAngle{0}
+
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Essentials
+\name{Arpit}{Aggarwal}
+\address{Veldmaarschalk Montgomerylaan 335-27, 5612 BG Eindhoven, The Netherlands}
+\mobile{(+31) 6-44824784} 
+%%% Social
+\email{ar13pit@gmail.com}
+\homepage{ar13pit.com}
+%\github{posquit0}
+%\linkedin{ar13pit}
+%%% Optionals
+%\position{NLP{\enskip\cdotp\enskip}Machine Learning{\enskip\cdotp\enskip}IoT{\enskip\cdotp\enskip}Embedded Systems} 
+%\quote{``I have not failed. I’ve just found 10,000 ways that won’t work." \\ \hfill - Thomas A. Edison}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Letter Data (Cover Letter)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\recipient
+  {Office of Graduate Admission}
+  {Eindhoven University of Technology\\5612 AP Eindhoven\\The Netherlands}
+\letterdate{\today}
+\lettertitle{\vspace{-2em} Re: Letter of Motivation}
+\letteropening{Dear Sir/Madam,}
+\letterclosing{Sincerely,\\~\\~\\}
+%\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Make a footer for CV with three arguments(<left>, <center>, <right>)
+\makecvfooter
+  {\today}
+  {Arpit Aggarwal~~~·~~~Letter of Motivation}
+  {}
+
+\begin{document}
+%%% Make a header for CV using personal data
+\makecvheader
+
+%%% Make a title for Cover Letter using letter data
+\makelettertitle
+
+%%% Write content for your cover letter
+\begin{cvletter}
+I am applying to \textbf{MSc program in Systems and Control} for the \textbf{Autumn of 2017} at your prestigious institution. I am currently working as a \textbf{Research Fellow} for a government sponsored project, at BIT Mesra-Ranchi, aimed at the development of an ASR based IVR system to aid farmers in the state of Jharkhand.\\ \\
+As a young boy of fifteen, I was well aware of the existence of several robots like Honda's ASIMO and how scientists worldwide were trying to make them intelligent. Little did I know then that six years down the line I would be working on something similar. While in my freshman year of Mechanical Engineering, I was introduced to hands on micro-controller programming by the robotics club of my institute and was really intrigued by it. I went on to participate in several college-level robotics and embedded systems competitions and learnt to program controllers of various architectures along the way.\\ \\
+With time I realized that I was most interested in the tech behind making these robots smart and entered into TI's innovation challenge with an idea of building an on-board speech recognition system to aid in the sorting of courier packages in my junior year. This project was the turning point of my career. I approached \textbf{Dr. Mahesh Chandra} to guide my team and have been associated with him since then. Under his guidance I filed a patent, submitted a paper to IEEE/ACM Transactions on Audio, Speech and Language Processing and published four IEEE international conference papers with two of them being awarded ``\textbf{Best Paper}'' in the field of signal processing.\\ \\
+I desire to work in the field of robotics with applied machine learning and statistics and believe that pursing a Master's course in an university as reputed as yours would give me the opportunity and the required exposure to succeed in my career. My long term aspiration is to startup a tech company to solve real world problems in a technologically efficient way. I believe my prowess in Speech Recognition, Computer Vision and Machine Learning would make significant contributions to the ongoing projects \textbf{Two! Ears} and \textbf{KSERA} at \textbf{Human-Technology Interaction} research group. I would also love to work with \textbf{Professor A. G. Kohlrausch} as we have common research interests in Auditory and Multi-sensory perception.\\ \\
+TU/e's vibrant research atmosphere and strong history of nurturing entrepreneurial minds make it the ideal place for me to continue my education. I believe that my previous accomplishments, arrogance to succeed and passion for research will enable me to make a large impact at Eindhoven University of Technology. I request the university to consider my candidature and look forward to receiving an offer of admission.
+\end{cvletter}
+
+%%% Make a closing for Cover Letter using letter data
+\makeletterclosing
+
+
+\end{document}
