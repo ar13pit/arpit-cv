@@ -1,10 +1,10 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
-% Awesome Resume LaTeX Template
+% Awesome Deedy Resume LaTeX Template
 %
 % This template has been created from:
 % https://github.com/posquit0/Awesome-CV
-% 
+% https://github.com/deedy/Deedy-Resume
 %
 % Author:
 % Arpit Aggarwal <ar13pit@gmail.com>
@@ -49,9 +49,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Needed to divide into several files
 %\usepackage{import}
-%\usepackage{booktabs}
-%\usepackage{multirow}
-%\usepackage{graphicx,draftwatermark}
 \SetWatermarkText{\centering \,\includegraphics[scale=0.4]{ai-002.jpg}}
 \SetWatermarkAngle{0}
 
@@ -69,7 +66,6 @@
 %\linkedin{ar13pit}
 %\github{ar13pit}
 %%% Optionals
-%\position{Artificial Intelligence Research}
 \position{Robotics{\enskip\cdotp\enskip}Signal Processing{\enskip\cdotp\enskip}Computational Linguistics} 
 %\quote{\vspace{-1.5em}``We are what we repeatedly do. Excellence, then, is not an act, but a habit.''}
 
@@ -80,15 +76,18 @@
 %%% Make a footer for CV with three arguments(<left>, <center>, <right>)
 \makecvfooter
   {\today}
+  {}
   {Arpit Aggarwal~~~·~~~Résumé}
-  {\thepage}
 
 \begin{document}
 %%% Make a header for CV with personal data
 \makecvheader
 
 %%% Import contents
-%\import{\sectiondir}{education.tex}
+\begin{minipage}[t]{0.33\textwidth} 
+
+\import{\sectiondir}{education.tex}
+\end{minipage}
 %\import{\sectiondir}{research-experience.tex}
 %\import{\sectiondir}{key-projects.tex}
 %\import{\sectiondir}{publications.tex}
