@@ -93,6 +93,9 @@
 \RequirePackage{graphicx}
 % Needed to insert watermarks
 \RequirePackage{draftwatermark}
+% Needed to cite references/publications
+\RequirePackage{cite}
+\renewcommand\refname{\vskip -1.5cm}
 % Needed to deal hyperlink
 \RequirePackage{hyperref}
 \hypersetup{
@@ -118,8 +121,10 @@
 %-------------------------------------------------------------------------------
 %% Page Layout
 % Configure page margins with geometry
-\geometry{left=2.0cm, top=1.5cm, right=2.0cm, bottom=2.0cm, footskip=.5cm}
+\geometry{left=2.0cm, top=1cm, right=1.5cm, bottom=1.5cm, footskip=0.5cm}
+%\usepackage[hmargin=1.25cm, vmargin=0.75cm]{geometry}
 %\geometry{left=2.54cm, top=2.54cm, right=2.54cm, bottom=2.0cm, footskip=.5cm}
+
 %% Header & Footer
 % Set offset to each header and offset
 \fancyhfoffset{0em}
