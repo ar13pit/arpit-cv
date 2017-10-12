@@ -1,2 +1,6 @@
 coverletter.*
 !coverletter.tex
+cv.*
+!cv.tex
+resume.*
+!resume
