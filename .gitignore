@@ -3,4 +3,4 @@ coverletter.*
 cv.*
 !cv.tex
 resume.*
-!resume
+!resume.tex
